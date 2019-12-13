@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+    src:
+        command: tail -f /dev/null
+        build:
+            context: .
+            target: source
+    dst:
+        command: tail -f /dev/null
+        build:
+            context: .
+            target: destination
